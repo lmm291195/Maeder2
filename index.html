@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MäderDesign</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .section {
+            margin: 30px auto;
+            max-width: 1200px;
+            text-align: left;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+        }
+        .product-card p {
+            margin: 5px 0;
+        }
+        .product-card .button {
+            margin-top: 10px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            .product-card {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MäderDesign</h1>
+        <p>Hochwertige CNC-gefertigte Namens- und Firmenschilder</p>
+    </header>
+    <nav>
+        <a href="#leistungen">Unsere Leistungen</a>
+        <a href="#shop">Shop</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="container" id="leistungen">
+        <h2>Unsere Leistungen</h2>
+        <div class="section">
+            <p>Wir bieten hochwertige, personalisierte Namens- und Firmenschilder für Privatpersonen und Unternehmen.</p>
+        </div>
+    </div>
+    <div class="container" id="shop">
+        <h2>Shop</h2>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Namensschild">
+            <h3>Namensschild</h3>
+            <p>Individuelle Schilder aus Edelstahl oder Holz.</p>
+            <p>Preis: CHF 80–150</p>
+            <a href="#kontakt" class="button">Jetzt bestellen</a>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Firmenschild">
+            <h3>Firmenschild</h3>
+            <p>Maßgeschneiderte Firmenschilder für Ihr Unternehmen.</p>
+            <p>Preis: Ab CHF 300</p>
+            <a href="#kontakt" class="button">Anfrage senden</a>
+        </div>
+    </div>
+    <div class="container" id="kontakt">
+        <h2>Kontakt</h2>
+        <div class="section">
+            <p>Kontaktieren Sie uns für individuelle Anfragen.</p>
+            <p>E-Mail: maedermotos@gmx.ch</p>
+            <p>Telefon: +41 79 547 38 15</p>
+            <form>
+                <input type="text" placeholder="Ihr Name" required>
+                <input type="email" placeholder="Ihre E-Mail" required>
+                <textarea placeholder="Ihre Nachricht" rows="5" required></textarea>
+                <button type="submit">Senden</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 MäderDesign. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
